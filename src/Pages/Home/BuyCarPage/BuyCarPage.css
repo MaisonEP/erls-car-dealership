@@ -1,0 +1,32 @@
+.PageContainer{
+    height: 100%;
+    width: 100%;
+/* overflow: hidden; */
+
+}
+
+.innerPageContainer{ height: 100%;
+    width: 100%;
+/* margin: 10px; */
+}
+.centreContainer{
+    display: flex;
+    height: calc(100% - 100px);
+    /* height: 100%; */
+    padding-top: 100px;
+}
+
+.contentDiv{
+    flex-grow: 10;
+    /* background-color: brown; */
+
+}
+
+.vehicleContainer{display: grid;
+/* background-color: chocolate; */
+grid-template-columns: repeat(4, 1fr);
+height: 100%;
+gap: 10px;
+row-gap: 40px;}
+
+.alignDiv{flex-grow: 1;}

@@ -1,0 +1,19 @@
+.vehicleTempContainer{
+    height: 700px;
+    width: 100%;
+    background-color: chartreuse;
+    display: flex;
+    flex-direction: column;
+}
+
+.vehiclePicture{
+    background-color: rgb(23, 31, 31);
+flex-grow: 3;
+border-radius: 5%;
+}
+
+.vehicleInfo{
+    flex-grow: 1;
+    background-color: cornflowerblue;
+    margin-top: 5px;
+}
