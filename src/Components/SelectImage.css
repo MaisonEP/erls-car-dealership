@@ -1,0 +1,15 @@
+
+
+.selectImageContainer{   width: 100%;
+    height: 100%;
+display: flex;
+flex-direction: column;}
+
+    .vehicleImage{
+     
+       max-width:839px ;
+        padding: 5px;
+        border-radius: 17px;
+       
+      
+    }

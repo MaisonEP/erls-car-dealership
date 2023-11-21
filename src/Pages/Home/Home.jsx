@@ -1,27 +1,35 @@
 import AppNavBar from "../../Components/NavigationBar";
 import "./Home.css";
-import HomeButton, { SellCarButton } from "./BuySellButton";
-import { Navigate, useNavigate } from "react-router-dom";
+import { BuyCarButton, SellCarButton } from "../../Components/BuySellButton";
+import { useNavigate } from "react-router-dom";
+import images from "../../Images/Images";
 
 const Home = () => {
-  const navigate = useNavigate();
+  const nav = useNavigate();
   return (
-    <div className="homeContainer">
+    <div
+      className="homeContainer"
+      style={{
+        backgroundImage: `url(${images.car})`,
+        backgroundSize: "cover",
+        backgroundPositionY: "25%",
+      }}
+    >
       <AppNavBar></AppNavBar>
       <div className="homeBody">
         <div className="homeButton">
-          <HomeButton>
+          <SellCarButton onClick={() => nav("/SellCarPage")}>
             <p className="buttonText"> Sell Your Car </p>
-          </HomeButton>
+          </SellCarButton>
         </div>
         <div className="homeButton">
-          <SellCarButton
+          <BuyCarButton
             onClick={() => {
-              navigate("/BuyCarPage");
+              nav("/BuyCarPage");
             }}
           >
             <p className="buttonText">Buy A New Car</p>
-          </SellCarButton>
+          </BuyCarButton>
         </div>
       </div>
       <div></div>
