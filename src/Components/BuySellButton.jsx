@@ -3,7 +3,7 @@ import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
 import { purple, orange, blue } from "@mui/material/colors";
 
-const BuyCarButton = styled(Button)({
+const SellCarButton = styled(Button)({
   backgroundColor: orange[400],
   fontFamily: ["cursive"],
   fontSize: 20,
@@ -12,7 +12,7 @@ const BuyCarButton = styled(Button)({
   borderRadius: "100%",
   "&:hover": { backgroundColor: orange[900] },
 });
-const SellCarButton = styled(Button)({
+const BuyCarButton = styled(Button)({
   backgroundColor: blue[700],
   fontFamily: ["cursive"],
   fontSize: 20,
